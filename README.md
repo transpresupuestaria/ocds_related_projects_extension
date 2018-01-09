@@ -58,6 +58,12 @@ And an object named relatedprojects.totalValue with the fields:
     "description": "Proyecto de Inversiín de Infraestructura Económica",
     "uri": "www.exampleuri.com"
   },
+  "additionalClassifications": {
+    "scheme": "additional scheme example",
+    "id": "abc-123",
+    "description": "A textual description or title for the code.",
+    "uri": "www.uriexample.com"
+  },
   "locations": [{
     "description": "Municipio de San Andrés Tuxtla, Catemaco, Cosoleacaque, Jáltipan, Texistepec, Oluta y Acayucan el Estado de Veracruz. Ambos en la Mesoregión Sur sureste",
     "geometry": {
