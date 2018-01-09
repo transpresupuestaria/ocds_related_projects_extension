@@ -3,6 +3,7 @@
 ## Background
 
 This extension already exists in the PPPs block of extensions. However, we propose to add it to the community extensions in order to directly link the contracts with their respective projects (when applies) in order to specify relevant attributes such as:
+
 	•	The total investment amount.
 	•	Projects’ specific localization (geolocation).
 
@@ -10,6 +11,7 @@ This extension already exists in the PPPs block of extensions. However, we propo
 ## Extension fields
 
 This extension adds an array named relatedProjects and consists of the following fields and objects:
+
 	•	Id - An externally provided identifier for the project. This might be drawn from a project’s register, or may be based on the canonical version of a project name. Project IDs should be unique to a publisher. URIs can be used.
 	•	Title - The name of the project to which this contracting process relates. Some organizations maintain a registry of projects, and the data should use the name by which the project is known in that registry.
 	•	Description - A short free text description of the project.
