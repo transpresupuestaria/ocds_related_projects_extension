@@ -1,1 +1,11 @@
-{"name":"related_projects","description":"The project section can be used to describe the relationship between this contracting process and a project or programme of work."}
+{
+	"name": {
+	"en": "SHCP Mexico - Related Projects"
+	},
+   	"description": {
+     	"en": "This OCDS extension adds an array of object to the planning section that provides projects information related to the contract required by Secretaría de Hacienda y Crédito Público | SHCP (Mexico)."
+   	},
+   	"documentationUrl": {
+     	"en": "https://github.com/transpresupuestaria/ocds_related_projects_extension"
+   	}
+}
