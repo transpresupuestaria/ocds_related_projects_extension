@@ -1,41 +1,172 @@
 {
   "definitions": {
-    "Planning": {
-      "properties": {
-        "relatedProjects": [{
-          "type": "array",
-          "id": "An externally provided identifier for the project. This might be drawn from a projects register, or may be based on the canonical version of a project name. Project IDs should be unique to a publisher. URIs can be used.",
-          "title": "The name of the project to which this contracting process relates. Some organizations maintain a registry of projects, and the data should use the name by which the project is known in that registry.",
-          "description": "A short free text description of the project.",
-          "sector": {
-            "scheme": "An classification should be drawn from an existing scheme or list of codes. This field is used to indicate the scheme/codelist from which the classification is drawn. For line item classifications, this value should represent an known Item Classification Scheme wherever possible.",
-            "id": "The classification code drawn from the selected scheme.",
-            "description": "A textual description or title for the code.",
-            "uri": "A URI to identify the code. In the event individual URIs are not available for items in the identifier scheme this value should be left blank."
-          },
-          "additionalClassifications": {
-            "scheme": "An classification should be drawn from an existing scheme or list of codes. This field is used to indicate the scheme/codelist from which the classification is drawn. For line item classifications, this value should represent an known Item Classification Scheme wherever possible.",
-            "id": "The classification code drawn from the selected scheme.",
-            "description": "A textual description or title for the code.",
-            "uri": "A URI to identify the code. In the event individual URIs are not available for items in the identifier scheme this value should be left blank."
-          },
-          "locations": [{
-            "type": "array",
-            "description": "A name or description of this location. This might include the name(s) of the location(s), or might provide a human readable description of the location to be covered. This description may be used in a user-interface.",
-            "geometry": {
-              "type": "The type of geoJSON Geometry Objects being provided. To provide latitude and longitude use ‘point’, and enter an array of [latitude,longitude] as the value of coordinates field: e.g. [37.42,-122.085]. Note the capitalisation of type values - set in order to maintain compatibility with geoJSON.",
-              "coordinates": {
-                "type": "array"
-              }
+      "Planning": {
+          "properties": {
+              "relatedProjects": {
+                  "description": "The project section can be used to describe the relationship between this contracting process and a project or programme of work.",
+                  "properties":{
+                      "id": {
+                          "title": "ID",
+                          "description": "An externally provided identifier for the project.",
+                          "type": [
+                              "string",
+                              "null"
+                          ]
+                      },
+                      "title": {
+                          "title": "Title",
+                          "description": "The name of the project to which this contracting process relates.",
+                          "type": [
+                              "string",
+                              "null"
+                          ]
+                      },
+                      "description": {
+                          "title": "Description",
+                          "description": "A short free text description of the project.",
+                          "type": [
+                              "string",
+                              "null"
+                          ]
+                      },
+                      "sector": {
+                          "description": "A high-level categorisation of the main sector this procurement process relates to. Use of UN COFOG codes, with ‘COFOG’ as the classification scheme, and the numerical COFOG code is recommended for the primary sector classification.",
+                          "properties": {
+                              "scheme": {
+                                  "description": "An classification should be drawn from an existing scheme or list of codes. This field is used to indicate the scheme/codelist from which the classification is drawn. For line item classifications, this value should represent an known Item Classification Scheme wherever possible.",
+                                  "title": "Scheme",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              },
+                              "id": {
+                                  "description": "The classification code drawn from the selected scheme.",
+                                  "title": "ID",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              },
+                              "description": {
+                                  "description": "A textual description or title for the code.",
+                                  "title": "Description of Sector",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              },
+                              "uri": {
+                                  "description": "A URI to identify the code. In the event individual URIs are not available for items in the identifier scheme this value should be left blank.",
+                                  "title": "URI",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              }
+                          },
+                          "title": "Sector",
+                          "type": "object"
+                      },
+                      "additionalClassifications": {
+                          "description": "Additional sector classifications, using local vocabularies where required.",
+                          "properties": {
+                              "scheme": {
+                                  "description": "An classification should be drawn from an existing scheme or list of codes. This field is used to indicate the scheme/codelist from which the classification is drawn. For line item classifications, this value should represent an known Item Classification Scheme wherever possible.",
+                                  "title": "Scheme",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              },
+                              "id": {
+                                  "description": "The classification code drawn from the selected scheme.",
+                                  "title": "ID",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              },
+                              "description": {
+                                  "description": "A textual description or title for the code.",
+                                  "title": "Description of Sector",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              },
+                              "uri": {
+                                  "description": "A URI to identify the code. In the event individual URIs are not available for items in the identifier scheme this value should be left blank.",
+                                  "title": "URI",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              }
+                          },
+                          "title": "Additional Classification",
+                          "type": "object"
+                      },
+                      "locations": {
+                          "description": "Information about the location where a project is taking place.",
+                          "properties": {
+                              "description": {
+                                  "description": "A name or description of this location. This might include the name(s) of the location(s), or might provide a human readable description of the location to be covered. This description may be used in a user-interface.",
+                                  "title": "Description of Location",
+                                  "type": [
+                                      "string",
+                                      "null"
+                                  ]
+                              },
+                              "geometry": {
+                                  "description": "We follow the GeoJSON standard to express basic location information, using latitude and longitude values in the WGS84 (EPSG:4326) projection.",
+                                  "properties": {
+                                      "type": {
+                                          "description": "The type of geoJSON Geometry Objects being provided. To provide latitude and longitude use ‘point’, and enter an array of [latitude,longitude] as the value of coordinates field: e.g. [37.42,-122.085]. Note the capitalisation of type values - set in order to maintain compatibility with geoJSON.",
+                                          "title": "Type",
+                                          "type": [
+                                              "string",
+                                              "null"
+                                          ]
+                                      },
+                                      "coordinates": {
+                                          "description": "The relevant array of points, e.g. [latitude,longitude], or nested array, for the geoJSON geometry being described. The longitude and latitude MUST be expressed in decimal degrees in the WGS84 (EPSG:4326) projection.",
+                                          "title": "Coordinates",
+                                          "type": [
+                                              "array",
+                                              "string",
+                                              "number"
+                                          ]
+                                      }
+                                  },
+                                  "title": "Geometry",
+                                  "type": "object"
+                              }
+                          },
+                          "title": "Locations",
+                          "type": "array"
+                      },
+                      "totalValue": {
+                          "$ref": "#/definitions/Value",
+                          "description": "The total anticipated value of the project over it's lifetime.",
+                          "title": "Total Value",
+                      },
+                      "uri": {
+                          "description": "A URI pointing to further information about this project.",
+                          "title": "URI",
+                          "type": [
+                              "string",
+                              "null"
+                          ]
+                      }
+                  },
+                  "title": "Related Projects",
+                  "type": [
+                      "array", 
+                      "null"
+                  ]
+                }
             }
-          }],
-          "totalValue": {
-            "amount": "Amount as a number.",
-            "currency": "The currency for each amount should always be specified using the uppercase 3-letter currency code from ISO4217."
-          },
-          "uri": "A URI pointing to further information about this project."
-        }]
-      }
+        }
     }
-  }
 }
