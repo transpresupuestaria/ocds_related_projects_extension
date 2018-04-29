@@ -149,7 +149,7 @@
                       "totalValue": {
                           "$ref": "#/definitions/Value",
                           "description": "The total anticipated value of the project over it's lifetime.",
-                          "title": "Total Value",
+                          "title": "Total Value"
                       },
                       "uri": {
                           "description": "A URI pointing to further information about this project.",
