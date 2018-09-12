@@ -8,6 +8,9 @@
   "documentationUrl": {
     "en": "https://github.com/transpresupuestaria/ocds_related_projects_extension"
   },
+  "schemas": [
+    "release-schema.json"
+  ],
   "compatibility": [
     "1.1"
   ],
