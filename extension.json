@@ -1,11 +1,17 @@
 {
-	"name": {
-	"en": "SHCP Mexico - Related Projects"
-	},
-   	"description": {
-     	"en": "This OCDS extension adds an array of object to the planning section that provides projects information related to the contract required by Secretaría de Hacienda y Crédito Público | SHCP (Mexico)."
-   	},
-   	"documentationUrl": {
-     	"en": "https://github.com/transpresupuestaria/ocds_related_projects_extension"
-   	}
+  "name": {
+    "en": "SHCP Mexico - Related Projects"
+  },
+  "description": {
+    "en": "This OCDS extension adds an array of object to the planning section that provides projects information related to the contract required by Secretar\u00eda de Hacienda y Cr\u00e9dito P\u00fablico | SHCP (Mexico)."
+  },
+  "documentationUrl": {
+    "en": "https://github.com/transpresupuestaria/ocds_related_projects_extension"
+  },
+  "compatibility": [
+    "1.1"
+  ],
+  "dependencies": [
+    "https://raw.githubusercontent.com/open-contracting/ocds_budget_projects_extension/master/extension.json"
+  ]
 }
