@@ -180,7 +180,7 @@
 							"id": {
 								"title": "ID",
 								"description": "An identifier for this propertie",
-								type: [
+								"type": [
 									"string",
 									"null"
 									]
@@ -251,7 +251,7 @@
 								}
 							"title": {
 								"title": "Related project title",
-								"description: "Related project title",
+								"description": "Related project title",
 								"type": [
 									"string",
 									"null"
@@ -260,10 +260,10 @@
 							"uri": {
 								"title": "URI",
 								"description": "A URI to identify the code. In the event individual URIs are not available for related projects this value should be left blank.",
-                                "type": [
-									                  "string",
-                                    "null"
-                                  ]
+                                				"type": [
+									"string",
+                                    					"null"
+                                  					]
 								}
 							}		
 						}
