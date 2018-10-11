@@ -191,7 +191,7 @@
 									"description":{
 										"title": "Metric description",
 										"description": "Updates on the actual delivered results",
-										type:[
+										"type":[
 											"string",
 											"null"
 											]
