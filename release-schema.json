@@ -167,7 +167,7 @@
                   ]
                 }
             }
-        }
+        },
       "contracts": {
 		"definition": "Information regarding the signed contract between the buyer and supplier(s).",
 		"properties": {
@@ -248,7 +248,7 @@
 											]
 										}	
 									}
-								}
+								},
 							"title": {
 								"title": "Related project title",
 								"description": "Related project title",
