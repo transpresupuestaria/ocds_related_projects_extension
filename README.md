@@ -59,7 +59,7 @@ And an object named relatedprojects.totalValue with the fields:
 			"id": "1",
 			"description": "Proyecto de Inversiín de Infraestructura Económica",
 			"scheme": "Tipo de Programa y Proyecto de Inversión",
-			}
+			},
 		"locations": {
 			"id": "24",
 			"description": "description": "Municipio de San Andrés Tuxtla, Catemaco, Cosoleacaque, Jáltipan, Texistepec, Oluta y Acayucan el Estado de Veracruz. Ambos en la Mesoregión Sur sureste",
@@ -68,13 +68,13 @@ And an object named relatedprojects.totalValue with the fields:
 				"coordinates": "coordinates": [17.99,-94.64],
 				}
 			}
-		}
+		},
 	"totalValue": {
 		"amount": "2.186277614E9",
 		"currency": "MXN"
 		}
 	}
-]
+],
 "contracts": {
 	"implementation": [
 	{
