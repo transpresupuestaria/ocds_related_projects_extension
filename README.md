@@ -53,7 +53,7 @@ And an object named relatedprojects.totalValue with the fields:
 	"relatedProjects": {
 		"id": "13096500015",
 		"title": "Modernización de la carretera federal MEX 180. Tramos San Andrés Tuxtla Catemaco y Cosoleacaque Jáltipan Acayucan. Primera Etapa.",
-		"description": "description": "Ampliar a 21.00 metros, para alojar 4 carriles de circulación, 2 para cada sentido, de 3.5 metros cada uno y acotamientos externos de 2.5 metros e internos de 0.5 metros",
+		"description": "Ampliar a 21.00 metros, para alojar 4 carriles de circulación, 2 para cada sentido, de 3.5 metros cada uno y acotamientos externos de 2.5 metros e internos de 0.5 metros",
 		"uri": "http://nptp.hacienda.gob.mx/NPTP/mapaOp/detalle.html?ID_PPI=39005&CVE_PPI=13096500015&RAMO=9&tipo=SEG",
 		"sector": {
 			"id": "1",
@@ -62,10 +62,10 @@ And an object named relatedprojects.totalValue with the fields:
 			},
 		"locations": {
 			"id": "24",
-			"description": "description": "Municipio de San Andrés Tuxtla, Catemaco, Cosoleacaque, Jáltipan, Texistepec, Oluta y Acayucan el Estado de Veracruz. Ambos en la Mesoregión Sur sureste",
+			"description": "Municipio de San Andrés Tuxtla, Catemaco, Cosoleacaque, Jáltipan, Texistepec, Oluta y Acayucan el Estado de Veracruz. Ambos en la Mesoregión Sur sureste",
 			"geometry": {
 				"type": "Point",
-				"coordinates": "coordinates": [17.99,-94.64],
+				"coordinates": [17.99,-94.64],
 				}
 			}
 		},
@@ -81,7 +81,7 @@ And an object named relatedprojects.totalValue with the fields:
 		"relatedProjects": {
 			"id": "13096500015",
 			"title": "Modernización de la carretera federal MEX 180. Tramos San Andrés Tuxtla Catemaco y Cosoleacaque Jáltipan Acayucan. Primera Etapa.",
-			"description": "description": "Ampliar a 21.00 metros, para alojar 4 carriles de circulación, 2 para cada sentido, de 3.5 metros cada uno y acotamientos externos de 2.5 metros e internos de 0.5 metros",
+			"description": "Ampliar a 21.00 metros, para alojar 4 carriles de circulación, 2 para cada sentido, de 3.5 metros cada uno y acotamientos externos de 2.5 metros e internos de 0.5 metros",
 			"uri": "www.exampleuri.com",	
 			"metrics": {
 				"id": "1",
