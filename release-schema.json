@@ -175,6 +175,22 @@
 				"description": "Information of the implementation stage of the contract.",
 				"properties": {
 					"relatedProjects": {
+						"title": {
+							"title": "Related project title",
+							"description": "Related project title",
+							"type": [
+								"string",
+								"null"
+								]
+							},
+						"uri": {
+							"title": "URI",
+							"description": "A URI to identify the code. In the event individual URIs are not available for related projects this value should be left blank.",
+                                			"type": [
+								"string",
+                                    				"null"
+                                  				]
+							},
 						"definition": "The relatedProjects block can be used to cross-reference between projects using their OCID.",
 						"properties": {
 							"id": {
@@ -203,7 +219,15 @@
 											"string",
 											"null"
 											] 
-										},	
+										},
+									"title": {
+										"title": "Title",
+										"description": "The title of this metric",
+										"type": [
+											"string",
+											"null"
+											]
+										},
 									"observations": {
 										"description": "An actual or target observation. Observations should include either a value (for financial metrics) or measure (for other metrics).",
 										"properties": {
@@ -238,33 +262,11 @@
 													}	
 												}
 											}
-										},
-									"title": {
-										"title": "Title",
-										"description": "The title of this metric",
-										"type": [
-											"string",
-											"null"
-											]
-										}	
+										}
+										
 									}
-								},
-							"title": {
-								"title": "Related project title",
-								"description": "Related project title",
-								"type": [
-									"string",
-									"null"
-									]
-								},
-							"uri": {
-								"title": "URI",
-								"description": "A URI to identify the code. In the event individual URIs are not available for related projects this value should be left blank.",
-                                				"type": [
-									"string",
-                                    					"null"
-                                  					]
 								}
+							
 							}		
 						}
 					}
