@@ -146,10 +146,28 @@
                           "title": "Locations",
                           "type": "array"
                       },
-                      "totalValue": {
-                          "$ref": "#/definitions/Value",
-                          "description": "The total anticipated value of the project over it's lifetime.",
-                          "title": "Total Value",
+			"totalValue": {
+			    "$ref": "#/definitions/Value",
+			    "title": "Total Value",
+                            "description": "The total anticipated value of the project over it's lifetime.",
+                            "properties": {
+                                "amount": {
+                                    "$ref": "#/definitions/Value/properties/amount",
+                                    "description": "Numerical value for the total amount of the contract in the type of currency with which you are subscribed.",
+                                    "title": "Amount",
+				    "type": [
+                                        "number",
+                                        "null"
+                                    	]
+                                },
+                                "currency": {
+                                    "$ref": "#/definitions/Value/properties/currency",
+                                    "description": "Acronym of the type of currency with which the contract is signed. The currency should always be specified using the uppercase 3-letter currency code from ISO4217.",
+                                    "title": "Currency",
+					"type": [
+                                        	"string",
+                                        	"null"
+                                    		]
                       },
                       "uri": {
                           "description": "A URI pointing to further information about this project.",
