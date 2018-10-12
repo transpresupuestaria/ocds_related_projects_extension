@@ -6,28 +6,20 @@
 					"description": "This project section can be used to describe the relationship between this contracting process and a project or programme of work.",
 					"properties":{
 						"id": {
-						"title": "ID",
-						"description": "An externally provided identifier for the project.",
-						"type": [
-							"string",
-							"null"
-							]
-						},
-					"id": {
-						"title": "ID",
-						"description": "The classification code drawn from the selected scheme.",
-						"type": [
-							"string",
-							"null"
-							]
-						},
-					"title": {
-						"title": "Title",
-						"description": "The name of the project to which this contracting process relates.",
-						"type": [
-							"string",
-							"null"
-							]
+							"title": "ID",
+							"description": "The classification code drawn from the selected scheme.",
+							"type": [
+								"string",
+								"null"
+								]
+							},
+						"title": {
+							"title": "Title",
+							"description": "The name of the project to which this contracting process relates.",
+							"type": [
+								"string",
+								"null"
+								]
 						},
 					"description": {
 						"title": "Description",
@@ -257,76 +249,4 @@
 			}
 		}
 	}
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-                      "additionalClassifications": {
-                          "description": "Additional sector classifications, using local vocabularies where required.",
-                          "properties": {
-                              "scheme": {
-                                  "description": "An classification should be drawn from an existing scheme or list of codes. This field is used to indicate the scheme/codelist from which the classification is drawn. For line item classifications, this value should represent an known Item Classification Scheme wherever possible.",
-                                  "title": "Scheme",
-                                  "type": [
-                                      "string",
-                                      "null"
-                                  ]
-                              },
-                              "id": {
-                                  "description": "The classification code drawn from the selected scheme.",
-                                  "title": "ID",
-                                  "type": [
-                                      "string",
-                                      "null"
-                                  ]
-                              },
-                              "description": {
-                                  "description": "A textual description or title for the code.",
-                                  "title": "Description of Sector",
-                                  "type": [
-                                      "string",
-                                      "null"
-                                  ]
-                              },
-                              "uri": {
-                                  "description": "A URI to identify the code. In the event individual URIs are not available for items in the identifier scheme this value should be left blank.",
-                                  "title": "URI",
-                                  "type": [
-                                      "string",
-                                      "null"
-                                  ]
-                              }
-                          },
-                          "title": "Additional Classification",
-                          "type": "object"
-                      },
-                      
-			
-                      "uri": {
-                          "description": "A URI pointing to further information about this project.",
-                          "title": "URI",
-                          "type": [
-                              "string",
-                              "null"
-                          ]
-                      }
-                  },
-                  "title": "Related Projects",
-                  "type": [
-                      "array", 
-                      "null"
-                  ]
-                }
-            }
-        },
-     
 }			
