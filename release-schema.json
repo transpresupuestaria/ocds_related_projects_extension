@@ -144,8 +144,7 @@
 				}
 			},
 		 "contracts": {
-		"definition": "Information regarding the signed contract between the buyer and supplier(s).",
-		"properties": {
+			"properties": {
 			"implementation": {
 				"description": "Information of the implementation stage of the contract.",
 				"properties": {
