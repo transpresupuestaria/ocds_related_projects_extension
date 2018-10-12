@@ -48,7 +48,7 @@
 					"sector": {
 						"title": "Sector",
 						"description": "A high-level categorisation of the main sector this procurement process relates to. Use of UN COFOG codes, with ‘COFOG’ as the classification scheme, and the numerical COFOG code is recommended for the primary sector classification.",
-						"type": "object"
+						"type": "object",
 						"properties": {
 							"id": {
 								"title": "ID",
