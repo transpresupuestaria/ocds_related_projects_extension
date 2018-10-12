@@ -145,107 +145,104 @@
 			},
 		 "contracts": {
 			"properties": {
-			"implementation": {
-				"description": "Information of the implementation stage of the contract.",
-				"properties": {
-					"relatedProjects": {
-						"title": {
-							"title": "Related project title",
-							"description": "Related project title",
-							"type": [
-								"string",
-								"null"
-								]
-							},
-						"uri": {
-							"title": "URI",
-							"description": "A URI to identify the code. In the event individual URIs are not available for related projects this value should be left blank.",
-                                			"type": [
-								"string",
-                                    				"null"
-                                  				]
-							},
-						"definition": "The relatedProjects block can be used to cross-reference between projects using their OCID.",
-						"properties": {
-							"id": {
-								"title": "ID",
-								"description": "An identifier for this propertie",
-								"type": [
-									"string",
-									"null"
-									]
-								},	
-							"metrics": {
-								"description": "Metrics are used to set out targets and results from a contracting process. In the implementation section it is used to provide updates on actually delivered results, also known as outputs.",
-								"properties": {
-									"description":{
-										"title": "Metric description",
-										"description": "Updates on the actual delivered results",
-										"type":[
-											"string",
-											"null"
-											]
+				"implementation": {
+					"properties": {
+						"relatedProjects": {
+							"definition": "The relatedProjects block can be used to cross-reference between projects using their OCID.",
+							"properties": {
+								"id": {
+									"title": "ID of the Related Project",
+									"description": "An identifier for this Related Project. In some cases this may be drawn from a codelist for this type of contracting process, or in other instances may be an arbitrary identifier.",
+									"type": [
+										"string",
+										"null"
+										] 
 									},
-									"id": {
-										"title": "ID of metric",
-										"description": "An identifier for this metric. In some cases this may be drawn from a codelist of metrics required for this type of contracting process, or in other instances may be an arbitrary identifier.",
-										"type": [
-											"string",
-											"null"
-											] 
-										},
-									"title": {
-										"title": "Title",
-										"description": "The title of this metric",
-										"type": [
-											"string",
-											"null"
-											]
-										},
-									"observations": {
-										"description": "An actual or target observation. Observations should include either a value (for financial metrics) or measure (for other metrics).",
-										"properties": {
-											"id": {
-												"title": "ID of metric's observation",
-												"description": "An identifier for this observation",
-												"type": [
-													"string",
-													"null"
-													]
-												},
-											"measure": {
-												"title": "Metric's observation measure",
-												"description": "For non-financial metrics, the measure of this forecast, target or actual observation. Measures may be provided as free text or numerical values.",
-												"type": [
-													"string",
-													"number",
-													"null"
-													]
-												},
-											"unit": {
-												"description": "Unit",
-												"properties": {
-													"name": {
-														"title": "Unit name",
-														"description": "The name of the unit.",
-														"type": [
-															"string",
-															"null"
-															]
-														}
-													}	
+								"title": {
+									"title": "Related project title",
+									"description": "Related project title",
+									"type": [
+										"string",
+										"null"
+										]
+									},
+								"uri": {
+									"title": "URI",
+									"description": "A URI to identify the code. In the event individual URIs are not available for related projects this value should be left blank.",
+                                					"type": [
+										"string",
+                                    						"null"
+                                  						]
+									},	
+								"metrics": {
+									"description": "Metrics are used to set out targets and results from a contracting process. In the implementation section it is used to provide updates on actually delivered results, also known as outputs.",
+									"properties": {
+										"id": {
+											"title": "ID of metric",
+											"description": "An identifier for this metric. In some cases this may be drawn from a codelist of metrics required for this type of contracting process, or in other instances may be an arbitrary identifier.",
+											"type": [
+												"string",
+												"null"
+												] 
+											},
+										"title": {
+											"title": "Title",
+											"description": "The title of this metric",
+											"type": [
+												"string",
+												"null"
+												]
+											},
+										"description":{
+											"title": "Metric description",
+											"description": "Updates on the actual delivered results",
+											"type":[
+												"string",
+												"null"
+												]
+											},
+										"observations": {
+											"description": "An actual or target observation. Observations should include either a value (for financial metrics) or measure (for other metrics).",
+											"properties": {
+												"id": {
+													"title": "ID of metric's observation",
+													"description": "An identifier for this observation",
+													"type": [
+														"string",
+														"null"
+														]
+													},
+												"measure": {
+													"title": "Metric's observation measure",
+													"description": "For non-financial metrics, the measure of this forecast, target or actual observation. Measures may be provided as free text or numerical values.",
+													"type": [
+														"string",
+														"number",
+														"null"
+														]
+													},
+												"unit": {
+													"description": "Unit",
+													"properties": {
+														"name": {
+															"title": "Unit name",
+															"description": "The name of the unit.",
+															"type": [
+																"string",
+																"null"
+																]
+															}
+														}	
+													}
 												}
 											}
 										}
-										
 									}
-								}
-							
-							}		
+								}		
+							}
 						}
 					}
 				}
 			}
 		}
-	}
-}			
+	}			
